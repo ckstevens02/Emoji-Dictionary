@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var emojiTableView: UITableView!
     
+    var emojis = ["😭", "😡", "❤️", "🐝", "😍", "😱", "😒", "😇", "💁🏻", "🐠", "⚡️"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,14 +22,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         emojiTableView.delegate = self
     }
     
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return emojis.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //print indexPath.row   %shows the progression to each row
         let cell = UITableViewCell()
-        cell.textLabel?.text = "What Up, Yo?"
+        cell.textLabel?.text = emojis[indexPath.row] //passes through the index of the array
         return cell
     }
     
