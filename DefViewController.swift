@@ -14,7 +14,7 @@ class DefViewController: UIViewController {
 
     //@IBOutlet weak var emoji: UILabel!
     
-    var emoji = "hi"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()

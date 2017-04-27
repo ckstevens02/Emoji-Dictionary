@@ -11,28 +11,30 @@ import UIKit
 class DefViewController: UIViewController {
 
     
-    var emoji = "hi"
+    var emoji = Emoji()
     
     @IBOutlet weak var emojiLabel: UILabel!
     
     @IBOutlet weak var definitionLabel: UILabel!
     
-    var cat = ["😭", "😡", "❤️", "🐝", "😍", "😱", "😒", "😇", "💁🏻", "🐠", "⚡️"]
+    @IBOutlet weak var Cat: UILabel!
+    
+    @IBOutlet weak var Year: UILabel!
+    
+    var faces = ["😭", "😡", "❤️", "🐝", "😍", "😱", "😒", "😇", "💁🏻", "🐠", "⚡️"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        if emoji == "😭" {
-            definitionLabel.text = "crying"
-        }
-        if emoji == "😡" {
-            definitionLabel.text = "angry"
-        }
+        emojiLabel.text = emoji.emojiFace
+        definitionLabel.text = emoji.definition
+        Year.text = "\(emoji.year)"
+        Cat.text = emoji.category
+    
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

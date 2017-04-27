@@ -13,6 +13,7 @@
 		CF0635641EAEEE4300A4B5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0635631EAEEE4300A4B5B7 /* Assets.xcassets */; };
 		CF0635671EAEEE4300A4B5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0635651EAEEE4300A4B5B7 /* LaunchScreen.storyboard */; };
 		CF0635711EAF39C300A4B5B7 /* DefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0635701EAF39C300A4B5B7 /* DefViewController.swift */; };
+		CF0BBCFF1EB184E600DB9D32 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BBCFE1EB184E600DB9D32 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CF0635661EAEEE4300A4B5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF0635681EAEEE4300A4B5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF0635701EAF39C300A4B5B7 /* DefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefViewController.swift; sourceTree = "<group>"; };
+		CF0BBCFE1EB184E600DB9D32 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		CF06355B1EAEEE4300A4B5B7 /* Emoji Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				CF0BBCFE1EB184E600DB9D32 /* Emoji.swift */,
 				CF06355C1EAEEE4300A4B5B7 /* AppDelegate.swift */,
 				CF06355E1EAEEE4300A4B5B7 /* ViewController.swift */,
 				CF0635701EAF39C300A4B5B7 /* DefViewController.swift */,
@@ -141,6 +144,7 @@
 			files = (
 				CF0635711EAF39C300A4B5B7 /* DefViewController.swift in Sources */,
 				CF06355F1EAEEE4300A4B5B7 /* ViewController.swift in Sources */,
+				CF0BBCFF1EB184E600DB9D32 /* Emoji.swift in Sources */,
 				CF06355D1EAEEE4300A4B5B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +309,7 @@
 				CF06356D1EAEEE4300A4B5B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
